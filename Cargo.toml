@@ -8,8 +8,12 @@ description = "FFI for libogg, the media container."
 license = "MIT"
 repository = "https://github.com/tomaka/ogg-sys"
 
+[lib]
+crate-type = ["cdylib", "rlib"]
+
 [dependencies]
 libc = "*"
+wasm-bindgen = "0.2.92"
 
 [build-dependencies]
 gcc = "0.3"
